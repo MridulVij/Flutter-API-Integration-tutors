@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 import 'Model/post_model.dart';
+import 'api_ex1.dart';
 import 'api_example5.dart';
 //import 'api_example4.dart';
 //import 'api_example3.dart';
@@ -21,7 +22,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: ApiEx1(),
     );
   }
 }
