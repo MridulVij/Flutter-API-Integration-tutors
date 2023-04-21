@@ -4,12 +4,15 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: '>=2.19.4 <3.0.0'
+  sdk: '>=2.19.0 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
+  get: ^4.6.5
   http: ^0.13.5
+  image_picker: ^0.8.7+1
+  shared_preferences: ^2.1.0
 
 dev_dependencies:
   flutter_test:
