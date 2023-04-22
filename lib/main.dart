@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:api_tutorial/api_part2/create_api.dart';
+import 'package:api_tutorial/api_part2/read_api.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
@@ -14,7 +16,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       home: HomeScreen(),
     );
   }
@@ -28,9 +30,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
           child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          ElevatedButton(onPressed: () {}, child: Text('Create == post')),
-          ElevatedButton(onPressed: () {}, child: Text('Read == get')),
+          ElevatedButton(
+              onPressed: () => Get.to(Create()), child: Text('Create == post')),
+          ElevatedButton(
+              onPressed: () => Get.to(Read()), child: Text('Read == get')),
           ElevatedButton(onPressed: () {}, child: Text('Update == put')),
           ElevatedButton(onPressed: () {}, child: Text('Delete == delete')),
         ],
