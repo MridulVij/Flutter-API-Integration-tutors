@@ -19,17 +19,18 @@ class _CreateState extends State<Create> {
   TextEditingController age = TextEditingController();
 
 // api Intergration
-
   Future<bool> addEmployee() async {
     Map<String, dynamic> body = {
       "name": name.text,
       "salary": salary.text,
       "age": age.text
     };
+
     // post == create == add to server, database
     final response = await http.post(
         Uri.parse('https://dummy.restapiexample.com/api/v1/create'),
         body: body);
+
     // response
     if (response.statusCode == 200) {
       final finalResponse = jsonDecode(response.body);
@@ -42,6 +43,7 @@ class _CreateState extends State<Create> {
     }
   }
 
+// Ui Integration
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -35,7 +35,8 @@ class HomeScreen extends StatelessWidget {
         children: [
           ElevatedButton(
               onPressed: () => Get.to(Create()), child: Text('Create == post')),
-          ElevatedButton(onPressed: () => null, child: Text('Read == get')),
+          ElevatedButton(
+              onPressed: () => Get.to(Read()), child: Text('Read == get')),
           ElevatedButton(onPressed: () {}, child: Text('Update == put')),
           ElevatedButton(onPressed: () {}, child: Text('Delete == delete')),
         ],
