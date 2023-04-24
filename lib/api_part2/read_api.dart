@@ -1,12 +1,7 @@
-// Read == get
-
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'models/read_model.dart';
 
 class Read extends StatefulWidget {
   const Read({super.key});
@@ -16,29 +11,33 @@ class Read extends StatefulWidget {
 }
 
 class _ReadState extends State<Read> {
-  // api integration
-  Future<List<ReadModel>> getEmployees() async {
-    final response = await http
-        .get(Uri.parse('https://dummy.restapiexample.com/api/v1/employees'));
-    if (response.statusCode == 200) {
-      final finalResponse = jsonDecode(response.body);
-
-      // only works on debug mod
-      if (kDebugMode) {
-        print(response);
-        print("/n");
-        print(finalResponse);
-      }
-
-      // kuch return krna tha toh mene ye kga diya
-      return jsonDecode(response.body);
-    } else {
-      return json.decode(response.body);
-    }
-  }
+  List<dynamic> users = [];
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: ListView.builder(
+          itemCount: users.length,
+          itemBuilder: (context, index) {
+            final user = users[index];
+            final email = user["email"];
+            return ListTile(
+              title: Text(email),
+            );
+          }),
+      floatingActionButton: FloatingActionButton(onPressed: fetchusers),
+    );
+  }
+
+  void fetchusers() async {
+    const url = 'https://randomuser.me/api/?results=10';
+    final uri = Uri.parse(url);
+    final response = await http.get(uri);
+    final body = response.body;
+    final json = jsonDecode(body);
+    setState(() {
+      users = json["results"];
+    });
+    print("fetchUsers Completed");
   }
 }

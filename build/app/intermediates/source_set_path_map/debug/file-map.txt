@@ -1,0 +1,22 @@
+com.example.api_tutorial.app-jetified-activity-1.6.1-0 C:\Users\User\.gradle\caches\transforms-3\11c25adc584d111b692fada55236093b\transformed\jetified-activity-1.6.1\res
+com.example.api_tutorial.app-jetified-annotation-experimental-1.3.0-1 C:\Users\User\.gradle\caches\transforms-3\4c9ef221d65499818c85c7a9ba9390f0\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.api_tutorial.app-lifecycle-runtime-2.5.1-2 C:\Users\User\.gradle\caches\transforms-3\59f5b936479a247cc7829bd29b339385\transformed\lifecycle-runtime-2.5.1\res
+com.example.api_tutorial.app-lifecycle-viewmodel-2.5.1-3 C:\Users\User\.gradle\caches\transforms-3\83664f96ab1d393f4db107fc80005c1a\transformed\lifecycle-viewmodel-2.5.1\res
+com.example.api_tutorial.app-jetified-lifecycle-viewmodel-savedstate-2.5.1-4 C:\Users\User\.gradle\caches\transforms-3\93757fda628c7d1f1ca87d38666c1c5f\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\res
+com.example.api_tutorial.app-jetified-core-ktx-1.9.0-5 C:\Users\User\.gradle\caches\transforms-3\9e782159d9a3b13cdcd6ce853dfda7f1\transformed\jetified-core-ktx-1.9.0\res
+com.example.api_tutorial.app-jetified-window-1.0.0-beta04-6 C:\Users\User\.gradle\caches\transforms-3\b734f4f2ef56619cfc425335a55b8ea1\transformed\jetified-window-1.0.0-beta04\res
+com.example.api_tutorial.app-core-1.9.0-7 C:\Users\User\.gradle\caches\transforms-3\b79a4eda754418b51d23abbd64c9662e\transformed\core-1.9.0\res
+com.example.api_tutorial.app-jetified-window-java-1.0.0-beta04-8 C:\Users\User\.gradle\caches\transforms-3\c2678c1ffee94a989fa2d7f64d09a82e\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.api_tutorial.app-jetified-savedstate-1.2.0-9 C:\Users\User\.gradle\caches\transforms-3\ccee0427df2e043704a9638759e7840a\transformed\jetified-savedstate-1.2.0\res
+com.example.api_tutorial.app-lifecycle-livedata-core-2.5.1-10 C:\Users\User\.gradle\caches\transforms-3\ee08082e4025b91d96ff6da1ecba63d5\transformed\lifecycle-livedata-core-2.5.1\res
+com.example.api_tutorial.app-debug-11 H:\Flutter Work\Flutter Projects\api_tutorial\android\app\src\debug\res
+com.example.api_tutorial.app-main-12 H:\Flutter Work\Flutter Projects\api_tutorial\android\app\src\main\res
+com.example.api_tutorial.app-pngs-13 H:\Flutter Work\Flutter Projects\api_tutorial\build\app\generated\res\pngs\debug
+com.example.api_tutorial.app-resValues-14 H:\Flutter Work\Flutter Projects\api_tutorial\build\app\generated\res\resValues\debug
+com.example.api_tutorial.app-rs-15 H:\Flutter Work\Flutter Projects\api_tutorial\build\app\generated\res\rs\debug
+com.example.api_tutorial.app-mergeDebugResources-16 H:\Flutter Work\Flutter Projects\api_tutorial\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.api_tutorial.app-mergeDebugResources-17 H:\Flutter Work\Flutter Projects\api_tutorial\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.api_tutorial.app-merged_res-18 H:\Flutter Work\Flutter Projects\api_tutorial\build\app\intermediates\merged_res\debug
+com.example.api_tutorial.app-packaged_res-19 H:\Flutter Work\Flutter Projects\api_tutorial\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
+com.example.api_tutorial.app-packaged_res-20 H:\Flutter Work\Flutter Projects\api_tutorial\build\image_picker_android\intermediates\packaged_res\debug
+com.example.api_tutorial.app-packaged_res-21 H:\Flutter Work\Flutter Projects\api_tutorial\build\shared_preferences_android\intermediates\packaged_res\debug
