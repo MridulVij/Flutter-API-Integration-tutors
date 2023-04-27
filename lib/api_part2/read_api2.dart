@@ -24,13 +24,9 @@ class _Read1State extends State<Read1> {
           itemBuilder: (context, index) {
             final user = users[index];
             return ListTile(
-              title: Text(user.),
-                //tileColor: genderColor,
-                // title: Column(
-                //   children: [Text(cellphno), Text(email), Text(gender)],
-                // ));
-
-                );
+              title: Text(user.name.first),
+              subtitle: Text(user.email),
+            );
           }),
       floatingActionButton: FloatingActionButton(onPressed: fetchusers),
     );
@@ -45,10 +41,12 @@ class _Read1State extends State<Read1> {
     final results = json["results"] as List<dynamic>;
     final transformed = results.map((e) {
       final name = UserName(
-          first: e['name']['first'],
-          last: e['name']['last'],
-          title: e['name']['title']);
-      return User(cell: e['cell'], email: e['email'], gender: e['gender'], name: name);
+        title: e['name']['title'],
+        first: e['name']['first'],
+        last: e['name']['last'],
+      );
+      return User(
+          cell: e['cell'], email: e['email'], gender: e['gender'], name: name);
     }).toList();
     setState(() {
       users = transformed;

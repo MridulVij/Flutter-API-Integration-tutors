@@ -6,6 +6,8 @@ import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'api_part1/Model/post_model.dart';
 import 'api_part2/read_api2.dart';
+import 'api_part2/read_api3.dart';
+import 'api_part2/services/read_api_service.dart';
 
 void main() {
   runApp(const MainApp());
@@ -23,9 +25,14 @@ class MainApp extends StatelessWidget {
   }
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +44,7 @@ class HomeScreen extends StatelessWidget {
           ElevatedButton(
               onPressed: () => Get.to(Create()), child: Text('Create == post')),
           ElevatedButton(
-              onPressed: () => Get.to(Read1()), child: Text('Read == get')),
+              onPressed: () => Get.to(Read2()), child: Text('Read == get')),
           ElevatedButton(onPressed: () => null, child: Text('Update == put')),
           ElevatedButton(onPressed: () {}, child: Text('Delete == delete')),
         ],
